@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRK Sourcing — Pet Products Manufacturing Partner in China</title>
+    <meta name="description" content="JRK Sourcing helps pet brands worldwide manufacture quality products — dog collars, harnesses, leashes, pet beds, bowls, and apparel. MOQ from 200 pcs. OEM/ODM.">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: #1a1a2e; background: #fff; line-height: 1.6;
+        }
+        a { color: #2d6a4f; text-decoration: none; }
+        a:hover { color: #1b4332; }
+        img { max-width: 100%; height: auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* ===== NAV ===== */
+        nav {
+            position: sticky; top: 0; z-index: 100;
+            background: #fff; border-bottom: 1px solid #e8e8e8;
+            padding: 16px 0;
+        }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 22px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.5px; }
+        .logo span { color: #2d6a4f; }
+        .nav-links a {
+            margin-left: 28px; font-size: 14px; font-weight: 500;
+            color: #4a4a5a; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #2d6a4f; }
+        .nav-cta {
+            background: #2d6a4f; color: #fff !important;
+            padding: 8px 20px; border-radius: 6px; font-weight: 600;
+        }
+        .nav-cta:hover { background: #1b4332; color: #fff !important; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 26px; height: 2.5px; background: #1a1a2e; border-radius: 2px; }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 100px 0 80px;
+            background: linear-gradient(135deg, #f0f7f4 0%, #e8f5ee 50%, #faf3e0 100%);
+        }
+        .hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .hero h1 {
+            font-size: 44px; line-height: 1.15; font-weight: 800;
+            letter-spacing: -1px; margin-bottom: 20px;
+        }
+        .hero h1 span { color: #2d6a4f; }
+        .hero p {
+            font-size: 18px; color: #555; margin-bottom: 32px;
+            max-width: 520px; line-height: 1.7;
+        }
+        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn-primary {
+            display: inline-block; background: #2d6a4f; color: #fff;
+            padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 16px;
+            transition: all 0.2s;
+        }
+        .btn-primary:hover { background: #1b4332; color: #fff; transform: translateY(-1px); }
+        .btn-secondary {
+            display: inline-block; background: #fff; color: #1a1a2e;
+            padding: 14px 32px; border-radius: 8px; font-weight: 600; font-size: 16px;
+            border: 1.5px solid #ddd; transition: all 0.2s;
+        }
+        .btn-secondary:hover { border-color: #2d6a4f; color: #2d6a4f; }
+        .hero-image {
+            background: #e0eee6; border-radius: 16px;
+            height: 380px; display: flex; align-items: center; justify-content: center;
+            color: #2d6a4f; font-size: 18px; text-align: center;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="%23d5e8de"/><text x="200" y="140" text-anchor="middle" fill="%232d6a4f" font-family="sans-serif" font-size="16">🏷️ Collars · Harnesses · Leashes</text><text x="200" y="170" text-anchor="middle" fill="%232d6a4f" font-family="sans-serif" font-size="16">🛏️ Beds · 🥣 Bowls · 👗 Apparel</text><text x="200" y="210" text-anchor="middle" fill="%23555" font-family="sans-serif" font-size="13">[ Product photos coming soon ]</text></svg>');
+            background-size: cover;
+        }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar {
+            text-align: center; padding: 20px 0;
+            border-bottom: 1px solid #eee; font-size: 13px; color: #888;
+            letter-spacing: 0.5px; text-transform: uppercase;
+        }
+        .trust-bar span { display: inline-block; margin: 0 16px; }
+
+        /* ===== SECTIONS ===== */
+        section { padding: 80px 0; }
+        .section-title {
+            font-size: 32px; font-weight: 700; text-align: center;
+            margin-bottom: 12px; letter-spacing: -0.5px;
+        }
+        .section-sub {
+            text-align: center; color: #777; font-size: 17px;
+            margin-bottom: 50px; max-width: 600px; margin-left: auto; margin-right: auto;
+        }
+
+        /* ===== PRODUCTS GRID ===== */
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .product-card {
+            border: 1px solid #eee; border-radius: 12px; padding: 28px 20px;
+            text-align: center; transition: all 0.25s;
+        }
+        .product-card:hover { border-color: #2d6a4f; box-shadow: 0 4px 20px rgba(45,106,79,0.08); transform: translateY(-2px); }
+        .product-icon { font-size: 38px; margin-bottom: 14px; display: block; }
+        .product-card h3 { font-size: 18px; margin-bottom: 8px; }
+        .product-card p { font-size: 14px; color: #777; line-height: 1.5; }
+
+        /* ===== HOW IT WORKS ===== */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; counter-reset: step; }
+        .step { text-align: center; padding: 0 10px; }
+        .step-num {
+            width: 50px; height: 50px; border-radius: 50%; background: #2d6a4f; color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 20px; font-weight: 700; margin: 0 auto 16px;
+        }
+        .step h3 { font-size: 18px; margin-bottom: 8px; }
+        .step p { font-size: 14px; color: #666; line-height: 1.6; }
+
+        /* ===== WHY JRK ===== */
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .why-card {
+            background: #f8fbf9; border-radius: 12px; padding: 32px 24px;
+            border: 1px solid #e8f0ec;
+        }
+        .why-card h3 { font-size: 18px; margin-bottom: 10px; }
+        .why-card p { font-size: 14px; color: #666; line-height: 1.6; }
+
+        /* ===== STATS ===== */
+        .stats-bar {
+            background: #2d6a4f; color: #fff; padding: 50px 0;
+            text-align: center;
+        }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .stat-num { font-size: 36px; font-weight: 800; margin-bottom: 4px; }
+        .stat-label { font-size: 14px; opacity: 0.8; }
+
+        /* ===== CTA ===== */
+        .cta-section {
+            text-align: center; background: #f8fbf9;
+            border-top: 1px solid #e8f0ec;
+        }
+        .cta-section h2 { margin-bottom: 12px; }
+        .cta-section p { color: #666; margin-bottom: 28px; }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #1a1a2e; color: #ccc; padding: 50px 0 30px;
+            font-size: 14px;
+        }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+        footer h4 { color: #fff; font-size: 15px; margin-bottom: 14px; }
+        footer a { color: #aaa; display: block; margin-bottom: 8px; }
+        footer a:hover { color: #fff; }
+        .footer-brand p { margin-bottom: 14px; line-height: 1.6; color: #999; }
+        .footer-bottom { border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: #666; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 900px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero h1 { font-size: 34px; }
+            .hero p { margin-left: auto; margin-right: auto; }
+            .hero-buttons { justify-content: center; }
+            .hero-image { height: 260px; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links a:not(.nav-cta) { display: none; }
+            .hamburger { display: flex; }
+        }
+        @media (max-width: 600px) {
+            .products-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+    <div class="container">
+        <a href="/" class="logo">JRK <span>Sourcing</span></a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/products/harnesses-leashes-collars">Collars &amp; Leashes</a>
+            <a href="/products/pet-beds">Pet Beds</a>
+            <a href="/products/pet-bowls-feeders">Bowls</a>
+            <a href="/products/dog-apparel">Apparel</a>
+            <a href="/about">About</a>
+            <a href="/contact" class="nav-cta">Get a Quote</a>
+        </div>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="container">
+        <div>
+            <h1>Your Pet Products<br><span>Manufacturing Partner</span><br>in China</h1>
+            <p>We help pet brands worldwide design, source, and manufacture quality products — dog collars, harnesses, beds, bowls, and apparel. MOQ from 200 pcs. OEM/ODM. Samples before production.</p>
+            <div class="hero-buttons">
+                <a href="/contact" class="btn-primary">Get a Quote</a>
+                <a href="/products/harnesses-leashes-collars" class="btn-secondary">View Products</a>
+            </div>
+        </div>
+        <div class="hero-image"></div>
+    </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+    <div class="container">
+        <span>🇺🇸 United States</span> <span>🇪🇺 Europe</span> <span>🇯🇵 Japan</span>
+        <span>🇰🇷 South Korea</span> <span>🇦🇺 Australia</span> <span>🌎 Worldwide</span>
+    </div>
+</div>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+    <div class="container">
+        <h2 class="section-title">What We Make</h2>
+        <p class="section-sub">Pet products are all we do. Every category, fully customizable.</p>
+        <div class="products-grid">
+            <a href="/products/harnesses-leashes-collars" class="product-card" style="display:block;color:inherit;">
+                <span class="product-icon">🐕</span>
+                <h3>Collars, Leashes &amp; Harnesses</h3>
+                <p>Nylon, leather, BioThane, climbing rope — custom hardware, labels, and packaging.</p>
+            </a>
+            <a href="/products/pet-beds" class="product-card" style="display:block;color:inherit;">
+                <span class="product-icon">🛏️</span>
+                <h3>Pet Beds &amp; Mats</h3>
+                <p>Orthopedic memory foam, donut/cave, cooling, travel — any fabric, any size.</p>
+            </a>
+            <a href="/products/pet-bowls-feeders" class="product-card" style="display:block;color:inherit;">
+                <span class="product-icon">🥣</span>
+                <h3>Pet Bowls &amp; Feeders</h3>
+                <p>Stainless steel, ceramic, slow feeder, elevated stands — FDA-grade materials.</p>
+            </a>
+            <a href="/products/dog-apparel" class="product-card" style="display:block;color:inherit;">
+                <span class="product-icon">👗</span>
+                <h3>Dog Apparel &amp; Accessories</h3>
+                <p>Raincoats, sweaters, bandanas, pajamas — XXS to XXL, custom patterns.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section style="background:#f8fbf9;">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-sub">From idea to delivery — we manage every step so you don't have to.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Tell Us What You Need</h3>
+                <p>Share your design, reference, or idea. We'll find the best factory for your product.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>We Handle Production</h3>
+                <p>From prototyping to QC inspection to shipping — we manage every detail in-house.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Receive Your Products</h3>
+                <p>Delivered to your door or Amazon FBA warehouse. Pay after quality check.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY JRK ===== -->
+<section>
+    <div class="container">
+        <h2 class="section-title">Why JRK Sourcing?</h2>
+        <p class="section-sub">We're not a general sourcing agent. We only do pet products — and we do them better.</p>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>🎯 Pet-Focused</h3>
+                <p>We don't source "everything" — only pet products. That means deeper factory relationships, better quality, and faster lead times for you.</p>
+            </div>
+            <div class="why-card">
+                <h3>💰 Factory Direct Pricing</h3>
+                <p>No middlemen markups. You get the same prices as brands ordering 10x your volume, with MOQ as low as 200 pcs.</p>
+            </div>
+            <div class="why-card">
+                <h3>✅ Risk-Free Start</h3>
+                <p>Request free samples. Pay after inspection. Not happy with the first sample? We make a second one at no cost.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats-bar">
+    <div class="container">
+        <div class="stats-grid">
+            <div><div class="stat-num">200+</div><div class="stat-label">Factories Vetted</div></div>
+            <div><div class="stat-num">60+</div><div class="stat-label">Brands Served</div></div>
+            <div><div class="stat-num">4</div><div class="stat-label">Product Categories</div></div>
+            <div><div class="stat-num">🌎</div><div class="stat-label">Worldwide Shipping</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="section-title">Ready to Bring Your Product to Life?</h2>
+        <p>Tell us what you're looking for. We'll get back to you within 24 hours with factory recommendations and pricing.</p>
+        <a href="/contact" class="btn-primary">Start Your Inquiry</a>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h4 style="font-size:20px;font-weight:700;">JRK <span style="color:#2d6a4f;">Sourcing</span></h4>
+                <p>China-based pet products manufacturing partner serving brands worldwide.</p>
+                <p>🇨🇳 Based in China · 🌎 Serving USA, Europe, Japan, Korea &amp; beyond</p>
+            </div>
+            <div>
+                <h4>Products</h4>
+                <a href="/products/harnesses-leashes-collars">Collars, Leashes &amp; Harnesses</a>
+                <a href="/products/pet-beds">Pet Beds &amp; Mats</a>
+                <a href="/products/pet-bowls-feeders">Pet Bowls &amp; Feeders</a>
+                <a href="/products/dog-apparel">Dog Apparel &amp; Accessories</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p style="color:#999;line-height:1.8;">
+                    Charlize<br>
+                    charlize@jrksourcing.com<br>
+                    WhatsApp: +86 XXX XXXX XXXX<br>
+                    Reply within 24 hours
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 JRK Sourcing. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
